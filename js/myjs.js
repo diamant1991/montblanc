@@ -60,3 +60,18 @@ $('.site-nav li a').click(function() {
 });
 
 
+var top_show = 100; 
+  var delay = 1300; 
+  $(document).ready(function() {
+    $(window).scroll(function () { 
+      if ($(this).scrollTop() > top_show) $('#montblanc .btn-top').fadeIn();
+      else $('#montblanc .btn-top').fadeOut();
+    });
+
+    $('#montblanc .btn-top').click(function () {
+      $('body, html').animate({
+        scrollTop: 0
+      }, delay);
+    });
+
+  });

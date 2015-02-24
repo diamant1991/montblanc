@@ -245,33 +245,91 @@
   opacity: 1 !important;
 }
 .mobile-background{
-  background-image: url(../images/bg.png);
-  background-position: top left;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: fixed;
-  overflow: hidden;
-  display: none;
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-  top: 48px;
-  left: 0;
-  -webkit-transform: translate3d(271px,0,0);
-  -moz-transform: translate3d(271px,0,0);
-  -ms-transform: translate3d(271px,0,0);
-  -o-transform: translate3d(271px,0,0);
-  transform: translate3d(271px,0,0);
-  -webkit-transition-duration: .3s;
-  -moz-transition-duration: .3s;
-  -o-transition-duration: .3s;
-  transition-duration: .3s;
+      background-image: url(../images/bg.png);
+      background-position: top left;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      position: fixed;
+      overflow: hidden;
+      display: none;
+      z-index: 2;
+      height: 100%;
+      width: 100%;
+      top: 48px;
+      left: 0;
+      -webkit-transform: translate3d(271px,0,0);
+      -moz-transform: translate3d(271px,0,0);
+      -ms-transform: translate3d(271px,0,0);
+      -o-transform: translate3d(271px,0,0);
+      transform: translate3d(271px,0,0);
+      -webkit-transition-duration: .3s;
+      -moz-transition-duration: .3s;
+      -o-transition-duration: .3s;
+      transition-duration: .3s;
 }
 .site-nav li a.active{
   color: #fff !important;
 }
+.product-preview:hover .highlights{
+    top: 0;
+    height: 100% !important;
+    padding: 25% 0 0 10px;
+    background-color: rgba(195,195,195,0.8);
+}
+    .product-preview:hover .highlights .infocontainer{
+        position: absolute;
+        bottom: 0;
+    }
+    .product-preview:hover .highlights .linkcontainer{
+        width: 90%;
+        margin: 0 auto;
+        line-height: 1.7;
+    }
+     .product-preview:hover .highlights .detail-link{
+        margin-bottom: 0;
+     }
+
+.product-preview .save-product button:before, .product-preview .detail-link .icon-link:before {
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 190%;
+    padding: 1px 0 0;
+    position: relative;
+    top: 6px;
+}
+.product-preview .save-product button span{
+    font-size: 16px;
+    text-transform: uppercase;
+    white-space: normal;
+}
+
+   .product-preview:hover .highlights .detail-link, .product-preview:hover .highlights .save-product{
+    display: block !important
+   }
+.highlights .save-product legend{
+    display: none;
+}
+#montblanc .btn-top{
+    display: none;
+}
+.shop-collection, .discover-montblanc{
+    cursor: pointer;
+}
+.gallery-container .carousel-indicators{
+    width: 100%;
+    bottom: 0;
+    text-align: right;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    -webkit-transform: translateZ(0);
+    margin:0;
+    left: auto;
+    padding: 0;
+}
+
 
 @media (max-width:667px){
     .item-1,.item-2, .item-3,.item-4{
@@ -310,7 +368,12 @@
         margin: 0 -15px;
         width: 108% !important;
       }
-      
+      .content-visible{
+        display: none;
+      }
+      #montblanc .category-products .category-product-detail .carousel-indicators li{
+        padding: 0 !important;
+      }
       
 }
 

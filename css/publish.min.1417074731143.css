@@ -488,9 +488,9 @@ html:lang(ja),:lang(ja) #montblanc{font:1em/1.25em "AzoSans Regular","Motoya Ced
 #montblanc video.playvideo{width:100%}
 #montblanc .col-right .main-image,#montblanc .col-right .image-thumbs,#montblanc .col-right .gallery-image-text{width:290px;float:none;margin:0 auto}
 }
-#montblanc .btn-top{position:fixed;bottom:0;right:0;background-repeat:no-repeat;width:63px;height:43px;cursor:pointer;text-decoration:none;background-position:center center;opacity:0;filter:alpha(opacity=0);-webkit-transition-property:opacity;-moz-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity;-webkit-transition-duration:450ms;-moz-transition-duration:450ms;-o-transition-duration:450ms;transition-duration:450ms;background-color:#111;border-top-left-radius:10px;border-top:1px solid #252525;border-left:1px solid #252525}
+#montblanc .btn-top{position:fixed;bottom:0;right:0;background-repeat:no-repeat;width:63px;height:43px;cursor:pointer;text-decoration:none;background-position:center center;opacity:0;filter:alpha(opacity=0);background-color:#111;border-top-left-radius:10px;border-top:1px solid #252525;border-left:1px solid #252525}
 .ios7iPhone #montblanc .btn-top{height:83px;background-position:center 20%}
-#montblanc .btn-top.show-btn{opacity:1;filter:alpha(opacity=100);-webkit-transition-property:opacity;-moz-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity;-webkit-transition-duration:450ms;-moz-transition-duration:450ms;-o-transition-duration:450ms;transition-duration:450ms;z-index:200}
+#montblanc .btn-top.show-btn{opacity:1;filter:alpha(opacity=100);z-index:200}
 .lightbox-open #montblanc .btn-top{opacity:0;filter:alpha(opacity=0)}
 #montblanc .montblanc-accordion{margin:0;padding:0;width:auto}
 #montblanc .montblanc-accordion dt,#montblanc .montblanc-accordion dd,#montblanc .montblanc-accordion dt:focus,#montblanc .montblanc-accordion dd:focus,#montblanc .montblanc-accordion dt:active,#montblanc .montblanc-accordion dd:active{outline:0}
