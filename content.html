@@ -14,11 +14,155 @@
 
 
 <link rel="stylesheet" href="css/jquery.bxslider.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/content.css">
 </head>
 <!--[if lt IE 9]><script src="/assets/vendor/html5shiv/dist/html5shiv-printshiv.min.js"></script><script src="/assets/vendor/respondJs/dest/respond.min.js"></script><![endif]-->
 
- 
+ <header class="container container--header">
+    <div class="container__inner">
+       <div class="site-header">
+          <div class="site-header__row">
+             <section class="site-header__logo">
+                <a href="#" class="site-logo">
+                   <span class="site-logo__img">Luxtory</span>
+                </a>
+             </section>
+             <button class="site-nav-toggle" id="js-site-nav-toggle">
+                <i class="fa fa-bars"></i>
+             </button>
+             <section class="site-header__nav" id="js-site-nav-wrap">
+                <nav class="site-nav">
+                   <aside class="site-nav__extra">
+                      <form class="form-island">
+                         <div class="input-island">
+                            <input type="text" name="search" class="input-island__input" placeholder="Поиск">
+                            <button class="input-island__button">
+                               <span class="input-island__icon fa fa-search"></span>
+                            </button>
+                         </div>
+                      </form>
+                      <br>
+                      <div class="cf">
+                         <span class="text-icon float--left">
+                            <a href="tel:+441509266320">
+                               <span class="text-icon__icon fa fa-phone"></span>
+                            </a>
+                            <span class="text-icon__text uppercase">
+                               <span class="vcard">
+                                  <span class="tel">01509 266320</span>
+                               </span>
+                            </span>
+                         </span>
+                         <a href="#" class="text-icon float--right">
+                            <span class="text-icon__icon fa fa-user"></span>
+                            <span class="text-icon__text">Логин</span>
+                         </a>
+                      </div>
+                   </aside>
+
+                   <ul class="nav site-nav__menu" id="js-site-nav-menu">
+                      <li class="">
+                         <a class="js-site-nav-top">
+                            бренды
+                            <i class="fa fa-caret-down"></i>
+                         </a>
+                         <ul class="site-nav__sub js-site-nav-sub">
+                            <li>
+                               <a href="#">Пункт 1</a>
+                            </li>
+                            <li>
+                               <a href="#">Пункт 2</a>
+                            </li>
+                            <li>
+                               <a href="#">Пункт 3</a>
+                            </li>
+                            <li>
+                               <a href="#">Пункт 4</a>
+                            </li>
+                            <li>
+                               <a href="#">Пункт 5</a>
+                            </li>
+                         </ul>
+                      </li>
+
+                      <li class="">
+                         <a class="js-site-nav-top">
+                            Категории
+                            <i class="fa fa-caret-down"></i>
+                         </a>
+                         <ul class="site-nav__sub site-nav__sub--no-promo js-site-nav-sub">
+                           <li>
+                              <strong>Writing Instruments</strong>
+                               <span class="line"></span>
+                               <ul>
+                                  <li>
+                                     <a href="#">Ballpoint Pens</a>
+                                  </li>
+                                  <li>
+                                     <a href="#">Ballpoint Pens</a>
+                                  </li>
+                               </ul>
+                           </li>
+
+                           <li>
+                              <strong>Champagne &amp; Spirits</strong>
+                              <span class="line"></span>
+                              <ul>
+                                 <li>
+                                    <a href="#">Whisky</a>
+                                 </li>
+                                 <li>
+                                    <a href="#">Whisky</a>
+                                 </li>
+                              </ul>
+                           </li>
+                            
+                         </ul>
+                      </li>
+                   </ul>
+                </nav>
+             </section>
+
+             <section class="site-header__account">
+                <div class="site-header__item">
+                   <span class="text-icon md-hide">
+                      <a href="#">
+                         <span class="text-icon__icon fa fa-phone"></span>
+                      </a>
+                      <span class="text-icon__text">
+                         <span class="vcard">
+                           <span class="tel">01509 266320</span>
+                         </span>
+                      </span>
+                   </span>
+
+                   <a class="text-icon md-hide" href="#">
+                     <span class="text-icon__icon fa fa-user"></span>
+                     <span class="text-icon__text">Логин</span>
+                  </a>
+
+                  <a class="text-icon" href="#">
+                     <span class="text-icon__icon fa fa-shopping-cart"></span>
+                     <span class="text-icon__text md-hide js-cart-total">£0.00</span>
+                  </a>
+                </div>
+
+                <div class="site-header__item site-header__item--search md-hide">
+                  <form class="form-island">
+                     <div class="input-island">
+                        <input type="text" name="search" class="input-island__input" placeholder="Поиск">
+                        <button class="input-island__button">
+                           <span class="input-island__icon fa fa-search"></span>
+                        </button>
+                     </div>
+                  </form>
+               </div>
+             </section>
+          </div>
+       </div>
+    </div>
+ </header>
 
 
   <div id="js-flashes"></div>
@@ -343,6 +487,15 @@
        minSlides: 2,
        maxSlides: 8,
      });
+
+     $('#js-site-nav-menu .js-site-nav-top').click(function() {
+        $(this).parent().toggleClass('is-active');
+     });
+
+     $('#js-site-nav-toggle').click(function() {
+        $('#js-site-nav-wrap').toggleClass('site-header__nav--slide');
+     });
+
    });
 </script>
 </html>

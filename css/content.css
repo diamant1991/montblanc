@@ -1436,3 +1436,9 @@ font-style:normal
 .js-cart-remove .fa-times { margin-left: 5px !important; }
 span.form-error { color: #FF0000 !important; font-weight: bold !important; }
 @import url('new.css');
+
+
+
+.js-site-nav-top{
+	cursor: pointer;
+}
